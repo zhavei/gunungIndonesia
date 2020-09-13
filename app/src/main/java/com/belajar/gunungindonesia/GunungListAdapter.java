@@ -41,18 +41,19 @@ public class GunungListAdapter extends RecyclerView.Adapter<GunungListAdapter.Ho
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToDetailActivity(view, gunung.getNamaGunung(), gunung.getImageUrl(), gunung.getTinggiGunung());
+                goToDetailActivity(view, gunung.getNamaGunung(), gunung.getImageUrl(), gunung.getTinggiGunung(), gunung.getDeskripsiGunung());
 
             }
         });
 
     }
 
-    private void goToDetailActivity(View view, String namaGunung, String imageUrl, String tinggiGunung) {
+    private void goToDetailActivity(View view, String namaGunung, String imageUrl, String tinggiGunung, String deskripsiGunung) {
         Intent intent = new Intent(view.getContext(), DetailGunungActivity.class);
         intent.putExtra("namaGunung", namaGunung);
         intent.putExtra("imageurl", imageUrl);
         intent.putExtra("tinggiGunung", tinggiGunung);
+        intent.putExtra("deskripsiGunung", deskripsiGunung);
 
         view.getContext().startActivity(intent);
 

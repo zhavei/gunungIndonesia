@@ -21,14 +21,18 @@ public class DetailGunungActivity extends AppCompatActivity {
         String namaGunung = getIntent().getStringExtra("namaGunung");
         String imageurl = getIntent().getStringExtra("imageurl");
         String tinggiGunung = getIntent().getStringExtra("tinggiGunung");
+        String deskripsiGunung = getIntent().getStringExtra("deskripsiGunung");
 
 
         ImageView ivGambar = findViewById(R.id.iv_gambar_gunung);
         TextView tvNamaGunung = findViewById(R.id.tv_nama_gunung);
         TextView tvTinggiGunung = findViewById(R.id.tv_tinggi_gunung);
+        TextView tvDeskripsiGunung = findViewById(R.id.tv_deskripsi_gunung);
 
         tvNamaGunung.setText(namaGunung);
         tvTinggiGunung.setText(tinggiGunung);
+        tvDeskripsiGunung.setText(deskripsiGunung);
+
         Glide.with(this.getApplicationContext())
                 .load(imageurl)
                 .into(ivGambar);
