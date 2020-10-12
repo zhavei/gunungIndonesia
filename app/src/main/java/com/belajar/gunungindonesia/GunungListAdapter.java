@@ -34,6 +34,7 @@ public class GunungListAdapter extends RecyclerView.Adapter<GunungListAdapter.Ho
     public void onBindViewHolder(@NonNull Holder holder, final int position) {
         final Gunung gunung = namaGunungList.get(position);
         holder.tvMountainName.setText(gunung.getNamaGunung());
+        holder.tvMontainTinggi.setText(gunung.getTinggiGunung());
         Glide.with(holder.ivMountainImage.getContext())
                 .load(gunung.getImageUrl())
                 .into(holder.ivMountainImage);
@@ -67,12 +68,14 @@ public class GunungListAdapter extends RecyclerView.Adapter<GunungListAdapter.Ho
     class Holder extends RecyclerView.ViewHolder {
         ImageView ivMountainImage;
         TextView tvMountainName;
+        TextView tvMontainTinggi;
 
 
         public Holder(@NonNull View itemView) {
             super(itemView);
             ivMountainImage = itemView.findViewById(R.id.iv_mountain_image);
-            tvMountainName = itemView.findViewById(R.id.tv_mountain_name);
+            tvMountainName = itemView.findViewById(R.id.tv_nama_gunung);
+            tvMontainTinggi= itemView.findViewById(R.id.tv_tinggi_gunung);
         }
     }
 }

@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Indonesia Mountains"
+        android:text="Gunung Indonesia"
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold" />

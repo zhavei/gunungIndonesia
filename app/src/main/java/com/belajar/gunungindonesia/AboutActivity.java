@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 public class AboutActivity extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         setContentView(R.layout.activity_about);
 
         //icon back ke hal list
@@ -23,17 +25,13 @@ public class AboutActivity extends AppCompatActivity {
        arrowBack.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               goToListGunungMain();
+               onBackPressed();
            }
        });
 
     }
 
-    private void goToListGunungMain() {
-        Intent intent = new Intent(this.getApplicationContext(), ListGunungActivity.class);
-        startActivity(intent);
-        finish();
-    }
+
 
 
 }
