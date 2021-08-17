@@ -123,7 +123,7 @@ public class MockData {
 
         Gunung gunungKerinci = new Gunung();
         gunungKerinci.setNamaGunung("Gunung Kerinci");
-        gunungKerinci.setImageUrl("https://blog.pigijo.com/wp-content/uploads/2020/03/shutterstock_1508694053.jpg");
+        gunungKerinci.setImageUrl("https://upload.wikimedia.org/wikipedia/commons/f/f4/Uprising-mount_kerinci.jpg");
         gunungKerinci.setTinggiGunung("Sumatera Barat | 3.805 mdpl");
         gunungKerinci.setDeskripsiGunung("Gunung Kerinci adalah gunung tertinggi di Sumatera dan merupakan gunung berapi yang paling tinggi di Indonesia. Gunung Kerinci berlokasi di Provinsi Jambi yang" +
                 "berbatasan dengan Sumatera Barat dan masuk dalam wilayah Taman Nasional Kerinci Seblat. Berada dalam wilayah Taman Nasional, gunung terindah di Indonesia ini juga merupakan habitat harimau dan badak Sumatera yang dilindungi oleh pemerintah.\n\nDi puncak Gunung Kerinci pada ketinggian 3.805 meter, Anda dapat menikmati pemandangan keseluruhan Kota Jambi, Padang, dan Bengkulu, lengkap dengan birunya \n" +
